@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GpuImageActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewGpu"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/elbicho"
+            android:contentDescription="Imagen con filtro" />
+
+        <Button
+            android:id="@+id/btnSepia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filtro Sepia"
+            android:backgroundTint="#76FF03"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3D5AFE"
+            android:text="Blanco y Negro"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnSketch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#76FF03"
+            android:text="Filtro Boceto"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
